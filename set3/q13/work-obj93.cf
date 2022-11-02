@@ -1,0 +1,4 @@
+v 4
+file . "counter_control.vhd" "1be1a0ae87f8631a0f47be061a3dcecc433de9cb" "20221030003218.290":
+  entity counter_control at 4( 138) + 0 on 11;
+  architecture behavioral of counter_control at 16( 343) + 0 on 12;

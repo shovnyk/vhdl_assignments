@@ -1,0 +1,54 @@
+$date
+  Tue Nov  1 00:51:16 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module fa_4bit_tb $end
+$var reg 4 ! a[3:0] $end
+$var reg 4 " b[3:0] $end
+$var reg 4 # s[3:0] $end
+$var reg 1 $ cout $end
+$scope module uut $end
+$var reg 4 % a[3:0] $end
+$var reg 4 & b[3:0] $end
+$var reg 4 ' s[3:0] $end
+$var reg 1 ( cout $end
+$var reg 4 ) carry[3:0] $end
+$scope module adder(0) $end
+$scope module bit0 $end
+$upscope $end
+$upscope $end
+$scope module adder(1) $end
+$scope module bitx $end
+$upscope $end
+$upscope $end
+$scope module adder(2) $end
+$scope module bitx $end
+$upscope $end
+$upscope $end
+$scope module adder(3) $end
+$scope module bitx $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b1010 !
+b1011 "
+b0101 #
+1$
+b1010 %
+b1011 &
+b0101 '
+1(
+b1010 )
+#10000000

@@ -1,0 +1,7 @@
+v 4
+file . "cla_tb.vhd" "5e357ea2975b8cf2ca448a9f1bf89ec8e21b6259" "20221101210400.122":
+  entity cla_tb at 3( 70) + 0 on 13;
+  architecture sim of cla_tb at 9( 144) + 0 on 14;
+file . "cla.vhd" "4d6e8e25e234dd36650ed1783fcf7fc8f6ae33af" "20221101210400.109":
+  entity cla at 3( 61) + 0 on 11;
+  architecture dataflow of cla at 17( 363) + 0 on 12;

@@ -1,0 +1,117 @@
+$date
+  Wed Nov  2 02:50:56 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module adder_subtractor_tb $end
+$var reg 4 ! a[3:0] $end
+$var reg 4 " b[3:0] $end
+$var reg 1 # m $end
+$var reg 4 $ s[3:0] $end
+$var reg 1 % ov $end
+$var reg 1 & cout $end
+$scope module uut $end
+$var reg 1 ' m $end
+$var reg 4 ( a[3:0] $end
+$var reg 4 ) b[3:0] $end
+$var reg 4 * s[3:0] $end
+$var reg 1 + cout $end
+$var reg 1 , ov $end
+$var reg 4 - carry[3:0] $end
+$scope module addsub(0) $end
+$scope module bit0 $end
+$upscope $end
+$upscope $end
+$scope module addsub(1) $end
+$scope module bit1 $end
+$upscope $end
+$upscope $end
+$scope module addsub(2) $end
+$scope module bit1 $end
+$upscope $end
+$upscope $end
+$scope module addsub(3) $end
+$scope module bit1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0111 !
+b0101 "
+0#
+b1100 $
+1%
+0&
+0'
+b0111 (
+b0101 )
+b1100 *
+0+
+1,
+b0111 -
+#10000000
+b0101 !
+b0111 "
+b0101 (
+b0111 )
+#20000000
+b1111 !
+b0100 "
+b0011 $
+0%
+1&
+b1111 (
+b0100 )
+b0011 *
+1+
+0,
+b1100 -
+#30000000
+b0111 !
+b0101 "
+1#
+b0010 $
+0%
+1&
+1'
+b0111 (
+b0101 )
+b0010 *
+1+
+0,
+b1111 -
+#40000000
+b0101 !
+b0111 "
+b1110 $
+0%
+0&
+b0101 (
+b0111 )
+b1110 *
+0+
+0,
+b0001 -
+#50000000
+b1111 !
+b0100 "
+b1011 $
+0%
+1&
+b1111 (
+b0100 )
+b1011 *
+1+
+0,
+b1111 -
+#60000000

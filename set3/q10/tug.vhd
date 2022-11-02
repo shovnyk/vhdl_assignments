@@ -1,0 +1,2 @@
+-- tug.vhd: Module to implement the Tug of War FSM in VHDL
+-- todo: finish this

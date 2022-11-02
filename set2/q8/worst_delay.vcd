@@ -1,0 +1,223 @@
+$date
+  Sat Oct 29 14:38:43 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module worst_delay_tb $end
+$var reg 4 ! a[3:0] $end
+$var reg 4 " b[3:0] $end
+$var reg 4 # s[3:0] $end
+$var reg 1 $ cout $end
+$comment elapsed is not handled $end
+$scope module rca_nbit $end
+$var reg 4 % a[3:0] $end
+$var reg 4 & b[3:0] $end
+$var reg 4 ' s[3:0] $end
+$var reg 1 ( cout $end
+$var reg 4 ) carry[3:0] $end
+$scope module rca_nbit(0) $end
+$scope module fa0 $end
+$scope module bit0 $end
+$var reg 1 * a $end
+$var reg 1 + b $end
+$var reg 1 , cin $end
+$var reg 1 - s $end
+$var reg 1 . cout $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module rca_nbit(1) $end
+$scope module fax $end
+$scope module bitx $end
+$var reg 1 / a $end
+$var reg 1 0 b $end
+$var reg 1 1 cin $end
+$var reg 1 2 s $end
+$var reg 1 3 cout $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module rca_nbit(2) $end
+$scope module fax $end
+$scope module bitx $end
+$var reg 1 4 a $end
+$var reg 1 5 b $end
+$var reg 1 6 cin $end
+$var reg 1 7 s $end
+$var reg 1 8 cout $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module rca_nbit(3) $end
+$scope module fax $end
+$scope module bitx $end
+$var reg 1 9 a $end
+$var reg 1 : b $end
+$var reg 1 ; cin $end
+$var reg 1 < s $end
+$var reg 1 = cout $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b1010 !
+b0001 "
+bUUUU #
+U$
+b1010 %
+b0001 &
+bUUUU '
+U(
+bUUUU )
+0*
+1+
+0,
+U-
+U.
+1/
+00
+U1
+U2
+U3
+04
+05
+U6
+U7
+U8
+19
+0:
+U;
+U<
+U=
+#10000000
+bUUU1 #
+bUUU1 '
+bU0U0 )
+1-
+0.
+01
+U2
+U3
+U7
+08
+0;
+U<
+U=
+#20000000
+b1U11 #
+0$
+b1U11 '
+0(
+b0000 )
+12
+03
+06
+1<
+0=
+#30000000
+b1011 #
+b1011 '
+07
+08
+#100000000
+b1011 !
+b0010 "
+b1011 %
+b0010 &
+1*
+0+
+10
+#110000000
+b1001 #
+b1001 '
+b0010 )
+1-
+0.
+02
+13
+16
+#120000000
+b1101 #
+b1101 '
+17
+08
+#200000000
+b1100 !
+b0011 "
+b1100 %
+b0011 &
+0*
+1+
+0/
+14
+#210000000
+b1011 #
+b1011 '
+b0100 )
+1-
+0.
+12
+03
+06
+07
+18
+1;
+#220000000
+b0111 #
+1$
+b0111 '
+1(
+b1000 )
+17
+08
+0;
+0<
+1=
+#230000000
+b1111 #
+0$
+b1111 '
+0(
+b0000 )
+1<
+0=
+#300000000
+b1101 !
+b0100 "
+b1101 %
+b0100 &
+1*
+0+
+00
+15
+#310000000
+b1001 #
+b1001 '
+b0100 )
+1-
+0.
+02
+03
+07
+18
+1;
+#320000000
+b0001 #
+1$
+b0001 '
+1(
+b1100 )
+0<
+1=
+#400000000

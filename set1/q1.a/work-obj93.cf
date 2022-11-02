@@ -1,0 +1,12 @@
+v 4
+file . "n_input_gate_tb.vhd" "6540bd756f39f0012de5b174e537332946cbb42c" "20221101193558.263":
+  entity n_input_gate_tb at 3( 85) + 0 on 18;
+  architecture sim of n_input_gate_tb at 9( 177) + 0 on 19;
+file . "n_input_gate.vhd" "9d02d27cf1115b8a1afe68e7b5d136d78c043a09" "20221101193558.251":
+  entity n_input_gate at 3( 80) + 0 on 11;
+  architecture and_gate of n_input_gate at 13( 326) + 0 on 12;
+  architecture or_gate of n_input_gate at 39( 885) + 0 on 13;
+  architecture nand_gate of n_input_gate at 54( 1269) + 0 on 14;
+  architecture nor_gate of n_input_gate at 69( 1674) + 0 on 15;
+  architecture xor_gate of n_input_gate at 84( 2079) + 0 on 16;
+  architecture xnor_gate of n_input_gate at 99( 2467) + 0 on 17;

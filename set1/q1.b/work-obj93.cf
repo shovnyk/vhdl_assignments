@@ -1,0 +1,7 @@
+v 4
+file . "fa_4bit_tb.vhd" "8d10e9c6aff46f6f5c5f3bad92b6c8cee5c297bb" "20221031192116.251":
+  entity fa_4bit_tb at 3( 61) + 0 on 13;
+  architecture sim of fa_4bit_tb at 9( 143) + 0 on 14;
+file . "fa_4bit.vhd" "2189b467622d863eb24874e5f3b66d016e73a8f9" "20221031192116.245":
+  entity fa_4bit at 3( 56) + 0 on 11;
+  architecture dataflow of fa_4bit at 16( 353) + 0 on 12;

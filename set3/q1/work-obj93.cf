@@ -1,0 +1,4 @@
+v 4
+file . "fsm1.vhd" "ca6006b53c9928c7a82e55f1e58b7d2f76890b1a" "20221028094426.631":
+  entity fsm1 at 3( 76) + 0 on 11;
+  architecture mealy of fsm1 at 13( 252) + 0 on 12;

@@ -1,0 +1,2 @@
+-- fsm1_tb.vhd: Testbench to test the fsm code.
+-- todo: finish this.

@@ -1,0 +1,2 @@
+-- seq0110_tb.vhd : Testbench to test the sequence recognizer module
+-- todo: finish this.
