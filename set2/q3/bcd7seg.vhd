@@ -1,14 +1,11 @@
 -- bcd7seg.vhd: Module to convert BCD into segments for an ACTIVE LOW 7 segment display
--- https://allaboutfpga.com/bcd-to-7-segment-decoder-vhdl-code/#BCD_to_7_segment_display_Decoder_Truth_Table
 
 library ieee;
 use ieee.std_logic_1164.all;
 
 entity bcd7seg is
-	port(
-			X : in std_logic_vector(3 downto 0);
-			Y : out std_logic_vector(6 downto 0)
-		);
+	port( X : in std_logic_vector(3 downto 0);
+		  Y : out std_logic_vector(6 downto 0));
 end bcd7seg;
 
 
@@ -66,9 +63,6 @@ begin
 end behavioral;
 
 -- todo: correct dataflow model
--- todo: structural model
+-- todo: finish structural model
 -- todo: behavioral model: check out this post -
 --       https://stackoverflow.com/questions/34000296/case-statement-error-message-in-vhdl
--- todo: ask sayan sir about correction to question:
---	1. should it be structural model? or behavioral ?
---	2. will the seven segment device be active high or active low

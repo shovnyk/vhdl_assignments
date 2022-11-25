@@ -1,6 +1,6 @@
 designfile=tff
 
-wave: clean $(designfile).vcd
+wave: $(designfile).vcd
 	gtkwave $(designfile).vcd
 
 $(designfile).vcd: $(designfile).vhd $(designfile)_tb.vhd

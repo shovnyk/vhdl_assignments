@@ -1,7 +1,0 @@
-v 4
-file . "counter_control_tb.vhd" "3597552ef8a761a01b9384d6e4d7cfb592221897" "20221027235021.543":
-  entity counter_control_tb at 3( 66) + 0 on 13;
-  architecture sim of counter_control_tb at 10( 190) + 0 on 14;
-file . "counter_control.vhd" "b595abd018311a4acf7fef988a5f11101f2d427e" "20221027235021.534":
-  entity counter_control at 3( 89) + 0 on 11;
-  architecture behavioral of counter_control at 16( 326) + 0 on 12;

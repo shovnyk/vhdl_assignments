@@ -1,4 +1,4 @@
--- fa_4bit.vhd: Module to implement a 4 bit full adder
+-- fa_4bit.vhd: Module to implement a 4 bit full (ripple carry) adder
 
 library ieee;
 use ieee.std_logic_1164.all;

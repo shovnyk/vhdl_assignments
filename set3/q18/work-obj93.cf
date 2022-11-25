@@ -1,0 +1,4 @@
+v 4
+file . "circuit18.vhd" "ec6663096a90cfe3542a76986e8533402f7da4b4" "20221123150455.957":
+  entity circuit18 at 3( 72) + 0 on 11;
+  architecture behavioral of circuit18 at 20( 449) + 0 on 12;

@@ -1,0 +1,10 @@
+v 4
+file . "adder_subtractor_tb.vhd" "200e591bbd62ddd27bc9e9dfc6847a3542dbe5f3" "20221116160823.330":
+  entity adder_subtractor_tb at 3( 88) + 0 on 15;
+  architecture sim of adder_subtractor_tb at 10( 214) + 0 on 16;
+file . "fa.vhd" "9627eebb9c8762cc8c2c24e8e0021970c64e1ba4" "20221116160823.309":
+  entity fa at 3( 64) + 0 on 11;
+  architecture dataflow of fa at 10( 187) + 0 on 12;
+file . "adder_subtractor.vhd" "5685fa86443f5b6fdacb059ab21a4707d0abef71" "20221116160823.322":
+  entity adder_subtractor at 3( 82) + 0 on 13;
+  architecture behavioral of adder_subtractor at 18( 453) + 0 on 14;

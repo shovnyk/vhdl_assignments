@@ -13,11 +13,22 @@ end entity;
 
 architecture behavioral of magcomp is
 begin
-	Comparator: for i in 0 to N-1 generate
-		greater_bit: if A(i) > B(i) generate
-			A_greater <= '1';
-			B_greater <= '0';
-		end generate greater_bit;
-	end generate Comparator;
+
+	process(A, B) is 
+	begin
+		A_greater <= '0';
+		B_greater <= '0';
+		for i in 0 to N-1 loop
+			if A(i) > B(i) then
+				A_greater <= '1';
+				B_greater <= '0';
+			elsif A(i) < B(i) then
+				A_greater <= '0';
+				B_greater <= '1';
+			end if;
+		end loop;
+	end process;
+
 	both_equal <= (not A_greater) and (not B_greater);
+
 end behavioral;

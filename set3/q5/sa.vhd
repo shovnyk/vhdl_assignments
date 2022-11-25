@@ -50,6 +50,7 @@ begin
 		end if;
 	end process;
 
+	-- set the overflow bit equal to the last carry out
 	Ov <= carry;
 
 end architecture;

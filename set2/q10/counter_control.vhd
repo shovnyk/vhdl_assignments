@@ -24,7 +24,7 @@ begin
 	begin
 		-- asynchronous reset
 		if reset = '1' then
-			state <= 0;
+			state <= "00000";
 		-- increment state whenever a clock edge is received
 		elsif rising_edge(clock) then
 			state <= state + 1;

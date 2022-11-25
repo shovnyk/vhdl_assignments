@@ -10,17 +10,17 @@ entity dff is
 			     nQ : out std_logic);
 end dff;
 
-architecture behavioral of dff is
+architecture rtl of dff is
 	signal state : std_logic;
 begin
 	seq: process(Clk, nRst) is
 	begin
 		if nRst = '0' then
-			state <= '0';
+			state <= '0';				-- asynchronous reset
 		elsif rising_edge(Clk) then
-			state <= D;
+			state <= D;					-- sample input
 		end if;
 	end process;
 	Q  <= state;
 	nQ <= not state;
-end behavioral;
+end rtl;

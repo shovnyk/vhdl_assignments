@@ -1,10 +1,10 @@
--- n_input_gate.vhd: Module to implement 6 basic logic gates with N bit inputs
+-- n_input_gate.vhd: Module to implement 6 basic logic gates with N-bit inputs
 
 library ieee;
 use ieee.std_logic_1164.all;
 
 entity n_input_gate is
-	generic(N   : integer); -- make number of bits a generic
+	generic(N   : natural := 2); -- make number of bits a generic
 	port(input  : in  std_logic_vector(N-1 downto 0);
 		 output : out std_logic);
 end n_input_gate;
@@ -35,6 +35,21 @@ begin
 
 end and_gate;
 
+-- Alternatte implementation of AND gate
+architecture and_gate_alt of n_input_gate is
+begin
+	process(input) is 
+		variable and_out : std_logic;
+	begin 
+		and_out := '1';
+		for k in 1 to N loop
+			and_out := and_out and input(k);
+			exit when and_out = '0'; -- exit when any one of the inputs becomes '0'
+		end loop;
+		output <= and_out;
+	end process;
+end and_gate_alt;
+
 -- 2. N input OR Gate
 architecture or_gate of n_input_gate is
 	signal data : std_logic_vector(N-2 downto 0);
@@ -56,10 +71,11 @@ architecture nand_gate of n_input_gate is
 begin
 	GATE : for i in 0 to N-2 generate
 		BIT0: if (i = 0) generate
-			data(i) <= (not input(i)) or (not input(i+1));
+			-- NAND operation is not associative, so use De-Morgan's laws
+			data(i) <= input(i) nand input(i+1);
 		end generate BIT0;
 		BITX: if (i /= 0) generate
-			data(i) <= data(i-1) or (not input(i+1));
+			data(i) <= (not data(i-1)) nand input(i+1);
 		end generate BITX;
 	end generate GATE;
 	output <= data(N-2);
@@ -71,10 +87,11 @@ architecture nor_gate of n_input_gate is
 begin
 	GATE : for i in 0 to N-2 generate
 		BIT0: if (i = 0) generate
-			data(i) <= (not input(i)) and (not input(i+1));
+			-- NOR operation is not associative, so use De-Morgan's laws
+			data(i) <= input(i) nor input(i+1);
 		end generate BIT0;
 		BITX: if (i /= 0) generate
-			data(i) <= data(i-1) and (not input(i+1));
+			data(i) <= (not data(i-1)) nor input(i+1);
 		end generate BITX;
 	end generate GATE;
 	output <= data(N-2);

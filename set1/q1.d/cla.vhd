@@ -1,4 +1,4 @@
--- cla.vhd: Module to create a 4-bit Carry Look Ahead logic
+-- cla.vhd: Module to create a 4-bit Carry Look Ahead Adder
 
 library ieee;
 use ieee.std_logic_1164.all;

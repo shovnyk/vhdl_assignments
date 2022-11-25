@@ -10,31 +10,29 @@ entity tff is
                nQ  : out std_logic);
 end tff;
 
-architecture behavioral of tff is
+architecture rtl of tff is
 	signal state : std_logic;
 begin
 	process(Clk, nRst) is
 	begin
 		if (nRst = '0') then
-			state <= '0';
+			state <= '0';							-- asynchronous reset
 		elsif rising_edge(Clk) and T = '1' then
-			state <= not state;
+			state <= not state;						-- toggle
 		end if;
 	end process;
 	Q  <= state;
 	nQ <= not state;
-end behavioral;
+end rtl;
 
 -- create T flip flop from JK flip flop
 architecture structural of tff is
-	signal X : std_logic;
 begin 
-	X <= not T;
-	jk_flipflop : entity work.jkff
+	jk_flipflop : entity work.jkff(rtl)
 				  port map(Clk  => Clk,
 						   nRst => nRst,
 						   J	=> T,
-						   K	=> X,
+						   K	=> T,
 						   Q	=> Q,
-						   nQ	=> Q);
+						   nQ	=> nQ);
 end structural;

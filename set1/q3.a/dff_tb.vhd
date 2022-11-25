@@ -19,7 +19,7 @@ begin
 	-- generate clock signal
 	clk <= not clk after cycle/2;
 	-- instantiate module
-	uut : entity work.dff(behavioral)
+	uut : entity work.dff(rtl)
 	      port map(Clk => clk, nRst => nrst, D => d, Q => q, nQ => nq);
 	-- apply signals
 	process is

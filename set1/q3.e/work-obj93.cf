@@ -1,0 +1,4 @@
+v 4
+file . "shift_left_right.vhd" "ecc6dbca9a902bf0e67c6721e65c02fc63a61772" "20221115192509.488":
+  entity shift_left_right at 4( 127) + 0 on 11;
+  architecture behavioral of shift_left_right at 18( 637) + 0 on 12;

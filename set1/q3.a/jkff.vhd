@@ -13,7 +13,7 @@ entity jkff is
 		  nQ   : out std_logic);
 end jkff;
 
-architecture behavioral of jkff is
+architecture rtl of jkff is
 
 	signal state : std_logic;
 
@@ -22,7 +22,7 @@ begin
 	seq: process(Clk, nRst) is
 	begin
 		if nRst = '0' then
-			state <= '0';
+			state <= '0';					-- asynchronous reset
 		elsif rising_edge(Clk) then
 			if J = '1' and K = '0' then
 				state <= '1';				-- set
@@ -39,4 +39,4 @@ begin
 	Q  <= state;
 	nQ <= not state;
 
-end behavioral;
+end rtl;

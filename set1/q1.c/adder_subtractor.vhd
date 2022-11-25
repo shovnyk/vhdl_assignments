@@ -14,7 +14,6 @@ entity adder_subtractor is
 			S    : out std_logic_vector(nbits-1 downto 0);	-- sum bits
 			Cout : out std_logic;							-- output carry/borrow
 			Ov	 : out std_logic							-- overflow detection
-			-- todo: what is the overflow bit actually doing (mano, page: 182, fig:4.13)
 		);
 end adder_subtractor;
 

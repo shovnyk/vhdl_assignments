@@ -9,7 +9,7 @@ entity counter_control is
 	port(
 			clk  : in std_logic;
 			rst  : in std_logic;
-		    ctrl : out std_logic
+		    CTRL : out std_logic
 		);
 end counter_control;
 
@@ -31,6 +31,6 @@ begin
 	end process;
 
 	-- decode output based on state
-	ctrl <= '1' when state = 7 or state = 11 else '0';
+	CTRL <= '1' when state = 7 or state = 11 else '0';
 	
 end behavioral;

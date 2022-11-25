@@ -1,8 +1,0 @@
-v 4
-file . "bcd7seg_tb.vhd" "c0fc24d4815410cf65a8befbf3cdce99439f33a3" "20221027105505.198":
-  entity bcd7seg_tb at 3( 82) + 0 on 14;
-  architecture sim of bcd7seg_tb at 9( 164) + 0 on 15;
-file . "bcd7seg.vhd" "38a9e798f247c6bfecc46de8c8a768fd7441f574" "20221027105505.177":
-  entity bcd7seg at 4( 198) + 0 on 11;
-  architecture dataflow of bcd7seg at 15( 367) + 0 on 12;
-  architecture behavioral of bcd7seg at 37( 1007) + 0 on 13;
